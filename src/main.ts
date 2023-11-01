@@ -11,6 +11,10 @@ async function bootstrap() {
     new ValidationPipe({
     whitelist: true, // restringe el envio de propiedades que no estan definidas en el DTO (definir la propiedad y sus atributos)
     forbidNonWhitelisted: true, // Elimina las propiedades No definidas en el DTO
+    transform: true, // Transforma los datos de los dto
+    transformOptions: {
+      enableImplicitConversion: true
+    }
     })
    );
 
