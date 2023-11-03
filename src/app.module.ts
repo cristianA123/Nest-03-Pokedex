@@ -30,8 +30,4 @@ import { EnvConfiguration } from './config/app.config';
   controllers: [],
   providers: [],
 })
-export class AppModule {
-
-
-
-}
+export class AppModule {}
